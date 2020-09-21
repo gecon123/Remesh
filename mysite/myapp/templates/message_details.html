@@ -1,0 +1,11 @@
+<a href="/app">Home</a><br><br>
+
+<h2>Messages:</h2>
+
+<a href="add_message">Add message</a>
+
+{% for mess in object_list %}
+    <li><a href="{% url 'messages_by_id' mess.pk %}">Conversation: {{mess.convo.id}}<br>{{ mess.start_time }}<br>{{ mess.title }}</a></li>
+{% endfor %}
+
+

@@ -1,0 +1,16 @@
+<h1>Conversations:</h1>
+
+<a href="add_conversation">Add conversation</a>
+<ul>
+{% for convo in object_list %}
+    <li><a href="{% url 'conversations_by_id' convo.pk %}">{{ convo.start_date }}<br>{{ convo.title }}</a></li>
+{% endfor %}
+</ul>
+
+<form action="{% url 'searchbar' %}" method="get">
+    <input type="text" name="search"/>
+    <button type="submit">Search</button>
+</form>
+
+
+

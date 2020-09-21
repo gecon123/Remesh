@@ -1,0 +1,10 @@
+<a href="/app">Home</a><br><br>
+
+{% if convo %}
+    Search results found
+    {% for con in convo %}
+        <a href="app">{{ con.title }}</a>
+    {% endfor %}
+{% else %}
+    No search results
+{% endif %}

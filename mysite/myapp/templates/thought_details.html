@@ -1,0 +1,14 @@
+<a href="/app">Home</a><br><br>
+
+<h2>Thoughts:</h2>
+
+<a href="add_tho">Add thought</a>
+<ul>
+{% for tho in object_list %}
+    <li>
+        Conversation: {{ tho.mess.convo.title }}<br>
+        Message: {{ tho.mess.title }}<br>
+        {{ tho.start_time }}<br>{{ tho.title }}
+    </li>
+{% endfor %}
+</ul>
