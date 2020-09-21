@@ -1,0 +1,13 @@
+Please follow these instructions to locally run the program: 
+
+1. Clone the repository: https://github.com/gecon123/Remesh
+2. Through terminal, navigate to the directory where the repo was cloned
+3. Install Django with the following command: pip install Django
+4. Make sure Django is installed by running: python -m django --version
+5. Run the command: source env/bin/activate
+6. Navigate into the "mysite" folder
+7. Run the command: python manage.py runserver
+8. If the browser does not open automatically, navigate to "http://127.0.0.1:8000/app/" on your internet browser
+9. To kill the server run the command: CTRL C
+10. To kill the environment run the command: deactivate
+11. Enjoy!
